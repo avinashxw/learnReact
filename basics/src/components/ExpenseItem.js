@@ -1,5 +1,6 @@
-function ExpenseItem() {
-    return (<div><h2>Expense Item(s)</h2><div>Date</div><div><h2>Title</h2><div>Amount</div></div></div>);
+function ExpenseItem(data) {
+
+    return (<div><span>{data.date}</span><h2>{data.title}</h2><span>{data.amount}</span></div>);
 }
 
 export default ExpenseItem;
