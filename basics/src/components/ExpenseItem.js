@@ -1,6 +1,8 @@
-function ExpenseItem(data) {
+import ExpenseDate from "./ExpenseDate";
 
-    return (<div><span>{data.date}</span><h2>{data.title}</h2><span>{data.amount}</span></div>);
+const ExpenseItem = (data) => {
+
+    return (<div><ExpenseDate date={data.date} /><h2>{data.title}</h2><span>{data.amount}</span><button onClick={()=>{ console.log('Clicked!'); }}>View Details</button></div>);
 }
 
 export default ExpenseItem;
